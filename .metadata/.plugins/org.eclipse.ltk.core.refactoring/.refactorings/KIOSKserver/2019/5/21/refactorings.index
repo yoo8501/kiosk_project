@@ -1,0 +1,28 @@
+1558369852546	Rename package 'test'
+1558369874134	Rename package 'com.kiosk.GUI'
+1558370058286	Rename package 'com.kiosk.model.controller'
+1558370079199	Copy package
+1558370794909	Rename type 'auth'
+1558371106084	Rename type 'payType'
+1558371110724	Rename type 'stock'
+1558371491160	Delete element
+1558371732601	Rename resource 'BodyMapper.xml'
+1558371749472	Copy file
+1558371755346	Rename resource 'authMapper.xml'
+1558371774732	Copy file
+1558371790057	Copy file
+1558371804834	Copy file
+1558371834312	Copy file
+1558371847871	Copy file
+1558371859681	Copy compilation unit
+1558371868500	Delete element
+1558371880284	Copy file
+1558371887236	Rename resource 'Stock.xml'
+1558372034434	Delete element
+1558372044786	Rename resource 'root-context.xml'
+1558372311642	Rename package 'spring.context'
+1558374292757	Delete element
+1558417344214	Copy file
+1558417349111	Copy file
+1558573659970	Copy package
+1558573671043	Copy package

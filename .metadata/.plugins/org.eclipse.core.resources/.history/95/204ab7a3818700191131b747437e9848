@@ -1,0 +1,5 @@
+DELETE FROM menu;
+DELETE FROM admin;
+DELETE FROM stock;
+
+insert into admin(admin_id,id,pw,name,auth_id) values(0,'root','1234','root',1);

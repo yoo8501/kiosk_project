@@ -1,0 +1,1 @@
+SELECT TABLE_name FROM user_tables

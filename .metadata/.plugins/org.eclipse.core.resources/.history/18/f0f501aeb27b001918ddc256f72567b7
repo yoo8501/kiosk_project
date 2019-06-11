@@ -1,0 +1,101 @@
+package com.kiosk;
+
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Component;
+
+import com.kiosk.gui.RegistForm;
+@Component
+public class MainFrame extends JFrame {
+
+	JButton registBtn;
+	JPanel p1;
+	int port = 9876;
+	InetAddress inetAddess;
+	String ip;
+
+	
+	Socket client;
+	ClientThread clientThread;
+
+	RegistForm registForm;
+
+	public MainFrame() {
+		setLayout(new FlowLayout());
+		registBtn = new JButton("회원 가입");
+		registForm = new RegistForm();
+		p1 = new JPanel();
+		// TODO Auto-generated constructor stub
+		getIp(); // 현재 접속중인 컴퓨터의 ip얻어오기
+		connect(); // kioskServer와 연결
+		p1.setPreferredSize(new Dimension(200, 300));
+
+		add(registBtn);
+		add(registForm);
+		
+
+		registBtn.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				registForm.setVisible(true);
+			}
+		});
+
+		setSize(500, 500);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
+	// 접속 ip얻어오기
+	public void getIp() {
+		try {
+			inetAddess = InetAddress.getLocalHost();
+			ip = inetAddess.getHostAddress();
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}
+		System.out.println("접속한 ip : " + ip);
+	}
+
+	// kioskServer와 연결
+	public void connect() {
+		System.out.println("connect() 메서드 실행");
+		try {
+			client = new Socket(ip, port);
+			System.out.println("client : " + client);
+			clientThread = new ClientThread(client);
+			System.out.println("=====Client_thread가동=====");
+			// 쓰레드 가동 시작
+			clientThread.start();
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) {
+		/*
+		 * ClassPathXmlApplicationContext context = null; String path =
+		 * "com/kiosk/spring/context/context.xml"; context = new
+		 * ClassPathXmlApplicationContext(path); ClientThread clientThread =
+		 * (ClientThread) context.getBean("clientThread"); new MainFrame();
+		 * context.close();
+		 */
+		new MainFrame();
+	}
+}

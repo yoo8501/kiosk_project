@@ -1,0 +1,6 @@
+SELECT * FROM Menu WHERE EXIST_ID = 1;
+
+
+DELETE FROM STOCK WHERE menu_id = 117;
+
+DELETE FROM MENU where menu_id = 117;

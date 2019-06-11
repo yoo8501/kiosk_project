@@ -1,0 +1,18 @@
+package com.kiosk;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainTest {
+
+	public static void main(String[] args) {
+		
+		
+		  ClassPathXmlApplicationContext context = null;
+		  String path ="com/kiosk/spring/context/context.xml";
+		  context = new ClassPathXmlApplicationContext(path); 
+		  ClientThread clientThread =(MainFrame) context.getBean("MainFrame");
+		  context.close();
+		 
+
+	}
+}

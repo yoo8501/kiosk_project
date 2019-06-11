@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drivers>
+	<provider id="athena"/>
+	<provider id="bigquery"/>
+	<provider id="db2"/>
+	<provider id="db2_zos"/>
+	<provider id="elasticsearch"/>
+	<provider id="exasol"/>
+	<provider id="jaybird"/>
+	<provider id="generic"/>
+	<provider id="greenplum"/>
+	<provider id="sqlserver"/>
+	<provider id="mssql"/>
+	<provider id="mysql"/>
+	<provider id="oracle">
+		<driver id="oracle_thin" categories="sql" custom="false" embedded="false" name="Oracle" class="oracle.jdbc.OracleDriver" url="jdbc:oracle:thin:@{host}[:{port}]/{database}" port="1521" description="Oracle thin driver. Doesn&#39;t require Oracle client.">
+			<library type="jar" path="D:\java_developer\spring_workspace\QNABOA~4\WebContent\WEB-INF\lib\ojdbc6.jar" custom="true"/>
+		</driver>
+	</provider>
+	<provider id="postgresql"/>
+	<provider id="snowflake"/>
+	<provider id="vertica"/>
+</drivers>
