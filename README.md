@@ -1,3 +1,3 @@
-# kiosk_project
+# 프랜차이즈 가능한 kiosk
 
 <h1>123</h1>
