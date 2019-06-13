@@ -7,8 +7,8 @@
 </head>
 <body>
 <table border="1px;" style="margin: auto; width: 100%">
-<tr>
-<td><img src="https://postfiles.pstatic.net/MjAxOTA2MTNfMzcg/MDAxNTYwMzk0MzM3MDM4.cWPvcebecPjFad54UNZvvwqwQQwphwWJLT3YB88pGPYg.HXTqvGEXRWGq0pz8ZriglaVG7twBsow4Gbq46oSr8yYg.PNG.qwea8501/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C1.PNG?type=w773" /></td>
+<tr style="margin: auto; width: 100%">
+<td style="margin: auto; width: 100%"><img src="https://postfiles.pstatic.net/MjAxOTA2MTNfMzcg/MDAxNTYwMzk0MzM3MDM4.cWPvcebecPjFad54UNZvvwqwQQwphwWJLT3YB88pGPYg.HXTqvGEXRWGq0pz8ZriglaVG7twBsow4Gbq46oSr8yYg.PNG.qwea8501/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C1.PNG?type=w773" /></td>
 </tr>
 <tr>
 <td><img src="https://postfiles.pstatic.net/MjAxOTA2MTNfMTU1/MDAxNTYwMzk0MzM3MDU0.WVkUuuLwg2npFDi8gMwGVdi-WP32lB1psDeRBiPxmXgg.9HvVQtI8hcJBziQfkkY-Efy95voIyk2zwxLe_9cXM2Ag.PNG.qwea8501/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C2.PNG?type=w773" /></td>
