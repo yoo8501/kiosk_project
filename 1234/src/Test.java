@@ -110,7 +110,7 @@ public class Test extends JFrame{
 		list.add(p8);
 		list.add(p9);
 		list.add(p10);
-		
+		//git_test
 		size = new Dimension(280,50);
 		setLayout(new FlowLayout());
 		
